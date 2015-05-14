@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.aaa"
+    package="com.kobe.graphicscamera"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -14,12 +14,26 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name=".IndexActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondActivity"
+            android:label="@string/second_activity">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.KOBE_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:label="@string/main_activity">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.KOBE_SAMPLE_CODE"/>
             </intent-filter>
         </activity>
     </application>
